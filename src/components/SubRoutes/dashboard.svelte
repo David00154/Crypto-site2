@@ -1,9 +1,5 @@
  <script>
      import axios from "axios";
-
-    //  axios.get(`https://gql-2.vercel.app/api/earning/${JSON.parse(localStorage.getItem('User')).id}`)
-    //  .then(res => console.log(res))
-    //  .catch(e => console.log(e))
  </script>
  
  <!--Container-->
@@ -40,13 +36,14 @@
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-500">Total BTC Earnings</h5>
                             <h3 class="font-bold text-3xl">
-                                {#await axios({
-                                    url: `https://gql-2.vercel.app/api/earning/${JSON.parse(localStorage.getItem('User')).id}`,
-                                    method: 'get'
-                                })}
+                                {#await fetch('http://localhost:3000/api/earning/38', {
+                                    method: 'GET',
+                                    headers: {'Content-Type':'application/json'}
+                                })
+                                .then(res => res.json())}
                                     <p>...waiting</p>
                                 {:then result}
-                                    ${result}
+                                    ${result.data}
                                 {:catch error}
                                     <p style="color: red">{error.message}</p>
                                 {/await}

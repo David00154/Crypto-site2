@@ -36,7 +36,7 @@
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-500">Total BTC Earnings</h5>
                             <h3 class="font-bold text-3xl">
-                                {#await fetch('https://gql-2.vercel.app/api/earning/38', {
+                                {#await fetch(`https://gql-2.vercel.app/api/earning/${JSON.parse(localStorage.getItem('User')).id}`, {
                                     method: 'GET',
                                     headers: {'Content-Type':'application/json'}
                                 })

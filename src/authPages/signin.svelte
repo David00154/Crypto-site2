@@ -45,7 +45,7 @@ const signin = function() {
                 <div></div>
                 <div class="flex flex-col px-2 lg:mx-0 mx-4">
                     <section class="my-4">
-                        <h3 class="font-bold text-2xl">Welcome to Binterest</h3>
+                        <h3 class="font-bold text-2xl">Welcome to Etoro</h3>
                         <p class="text-gray-600 pt-2">Sign in to your account.</p>
                     </section>
                     {#if error_ !== ''}

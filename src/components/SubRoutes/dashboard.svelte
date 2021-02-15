@@ -77,7 +77,7 @@
                         </div>
                         <div class="flex-1 text-right md:text-center">
                             <h5 class="font-bold uppercase text-gray-500">Btc Wallet Address</h5>
-                            <h3 class="font-bold text-3xl">xxxxxxx <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3>
+                            <h3 class="font-bold text-3xl">1Hqtfu2fujBLwGRFk1H2Sv3P5tCQjztdSk <span class="text-red-500"><i class="fas fa-caret-up"></i></span></h3>
                         </div>
                     </div>
                 </div>

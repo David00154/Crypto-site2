@@ -43,7 +43,7 @@
       <!-- <span class="text-lg font-normal text-gray-200 roboto">
       Go faster, go stronger, never stop.</span> -->
       <p class="text-lg font-thin mb-3 text-white">Join 15,000+ people who has {'\n'} 
-      opened an account with Binterest</p>
+      opened an account with Etoro</p>
     </div>
     <div class="mt-5">
       <a style="cursor: pointer;" on:click={() => push('/about')} class="mr-3 px-4 text-lg py-3 shadow-md font-medium text-gray-700 bg-white rounded hover:bg-gray-700 hover:text-white transition duration-400 hover:shadow-xl">Read More</a>

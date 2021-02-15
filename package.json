@@ -1,0 +1,38 @@
+{
+  "name": "coin-site",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "build:css": "tailwind build public/tailwind.css -o public/index.css",
+    "local:build": "rollup -c",
+    "local:dev": "rollup -c -w",
+    "start": "node server",
+    "validate": "svelte-check"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^16.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-typescript": "^6.0.0",
+    "@tsconfig/svelte": "^1.0.0",
+    "rollup": "^2.34.0",
+    "rollup-plugin-css-only": "^3.0.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "svelte": "^3.0.0",
+    "svelte-check": "^1.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tailwindcss": "^2.0.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "postcss": "^8.1.10",
+    "postcss-nesting": "^7.0.1",
+    "svelte-spa-router": "^3.0.5",
+    "swiper": "^6.3.5"
+  }
+}

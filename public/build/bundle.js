@@ -5227,10 +5227,10 @@ var app = (function () {
     	};
     }
 
-    // (48:32) {:then result}
+    // (45:32) {:then result}
     function create_then_block(ctx) {
     	let t0;
-    	let t1_value = /*result*/ ctx[0] + "";
+    	let t1_value = /*result*/ ctx[0].data + "";
     	let t1;
 
     	return {
@@ -5250,7 +5250,7 @@ var app = (function () {
     	};
     }
 
-    // (46:35)                                      <p>...waiting</p>                                 {:then result}
+    // (43:57)                                      <p>...waiting</p>                                 {:then result}
     function create_pending_block(ctx) {
     	let p;
 
@@ -5320,10 +5320,10 @@ var app = (function () {
     	};
 
     	handle_promise(
-    		promise = axios$1({
-    			url: `https://gql-2.vercel.app/api/earning/${JSON.parse(localStorage.getItem("User")).id}`,
-    			method: "get"
-    		}),
+    		promise = fetch("http://localhost:3000/api/earning/38", {
+    			method: "GET",
+    			headers: { "Content-Type": "application/json" }
+    		}).then(func),
     		info
     	);
 
@@ -5374,7 +5374,7 @@ var app = (function () {
 
     			div29.innerHTML = `<div class="bg-white border rounded shadow p-2"><div class="flex flex-row items-center"><div class="flex-shrink pr-4"><div class="rounded p-3 bg-blue-600"><i class="fas fa-server fa-2x fa-fw fa-inverse"></i></div></div> 
                         <div class="flex-1 text-right md:text-center"><h5 class="font-bold uppercase text-gray-500">Server Uptime</h5> 
-                            <h3 class="font-bold text-3xl">152 days</h3></div></div></div>`;
+                            <h3 class="font-bold text-3xl">24 hours</h3></div></div></div>`;
 
     			t24 = space();
     			div30 = element("div");
@@ -5513,6 +5513,8 @@ var app = (function () {
     		}
     	};
     }
+
+    const func = res => res.json();
 
     class Dashboard extends SvelteComponent {
     	constructor(options) {

@@ -31,7 +31,7 @@
 	<div class="container mt-8 mx-auto px-5 mb-5">
 		<section class="lg:grid grid-cols-2 gap-5">
 			<div class="">
-				<h2 class="about-txt font-medium text-gray-900 my-5">About Bin<span class="about-txt font-medium text-gray-700">Terest</span></h2>
+				<h2 class="about-txt font-medium text-gray-900 my-5">About Eto<span class="about-txt font-medium text-gray-700">Ro</span></h2>
 
 				<p class="font-normal text-gray-600">Etoro is a trading company focused on customer satisfaction both online and offline to ensure you make trades with the least margin for error.</p>
 

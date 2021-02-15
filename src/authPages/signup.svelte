@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Account | Binterest</title>
+	<title>Account | Etoro</title>
 </svelte:head>
 
 <script lang="ts">
@@ -130,7 +130,7 @@ import { text } from 'svelte/internal';
 			<div></div>
 			<div class="flex flex-col px-2 lg:mx-0 mx-4">
 				<section class="my-4">
-					<h3 class="font-bold text-2xl">Welcome to Binterest</h3>
+					<h3 class="font-bold text-2xl">Welcome to Etoro</h3>
 					<p class="text-gray-600 pt-2">Sign up for an account.</p>
 				</section>
 				{#if error_ !== ''}
